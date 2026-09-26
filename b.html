@@ -5,19 +5,19 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Tigran Astor — дизайнер, делаю продукты с ИИ</title>
 <meta name="description" content="Дизайнер. Делаю свои продукты с ИИ вместо команды. Живу во Вьетнаме. Дневник — в Телеграме.">
-<meta name="theme-color" content="#F4F3F1">
-<meta name="color-scheme" content="light">
+<meta name="theme-color" content="#141414">
+<meta name="color-scheme" content="dark">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="assets/favicon-32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://astortiko.github.io/">
-<link rel="canonical" href="https://astortiko.github.io/">
+<meta property="og:url" content="https://astortiko.github.io/b.html">
+<link rel="canonical" href="https://astortiko.github.io/b.html">
 <meta property="og:locale" content="ru_RU">
 <meta property="og:site_name" content="Tigran Astor">
 <meta property="og:title" content="Tigran Astor — дизайнер, делаю продукты с ИИ">
 <meta property="og:description" content="Дизайнер. Делаю свои продукты с ИИ вместо команды. Живу во Вьетнаме. Дневник — в Телеграме.">
-<meta property="og:image" content="https://astortiko.github.io/assets/og.png">
+<meta property="og:image" content="https://astortiko.github.io/assets/og-b.png">
 <meta property="og:image:type" content="image/png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -25,7 +25,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Tigran Astor — дизайнер, делаю продукты с ИИ">
 <meta name="twitter:description" content="Дизайнер. Делаю свои продукты с ИИ вместо команды. Живу во Вьетнаме. Дневник — в Телеграме.">
-<meta name="twitter:image" content="https://astortiko.github.io/assets/og.png">
+<meta name="twitter:image" content="https://astortiko.github.io/assets/og-b.png">
 <style>
 /* Fonts are self-hosted (OFL, see assets/fonts/OFL.txt): nothing is requested from Google or a CDN.
    Rubik ships as one variable file per script and is the only typeface on the page. */
@@ -74,27 +74,28 @@
   --easing-opacity:cubic-bezier(.4,0,.2,1);
 }
 
-/* ══ Layer 2 · Semantics · VARIANT A «warm light» — the only block that differs from b.html.
-   Paper page, white surfaces (the one white material), ink text, coral for the one action ══ */
+/* ══ Layer 2 · Semantics · VARIANT B «soft dark» — the only block that differs from index.html.
+   Graphite page (never pure black), surfaces one step lighter, paper-white text, coral for the one
+   action. Warmth lives in the light — a faint coral glow behind the photo — never in a tinted grey ══ */
 :root{
-  --color-bg-page:var(--paper-50);
-  --color-bg-surface:var(--white);
-  --color-bg-surface-hover:color-mix(in srgb, var(--white) 55%, var(--paper-50));
+  --color-bg-page:var(--ink-900);
+  --color-bg-surface:var(--ink-800);
+  --color-bg-surface-hover:color-mix(in srgb, var(--ink-800) 94%, var(--white));
   --color-bg-cta:var(--coral-500);
-  --color-bg-cta-flood:var(--ink-900);
-  --color-bg-round-hover:var(--k-06);
+  --color-bg-cta-flood:var(--paper-50);
+  --color-bg-round-hover:var(--w-06);
   --color-bg-photo:var(--ink-800);                   /* the frame shows this until the photo arrives */
-  --color-content-primary:var(--ink-900);
-  --color-content-secondary:color-mix(in srgb, var(--ink-900) 64%, transparent);   /* 5.3:1 on paper */
+  --color-content-primary:var(--paper-50);
+  --color-content-secondary:color-mix(in srgb, var(--paper-50) 66%, transparent);  /* 7:1 on the surface */
   --color-content-on-cta:var(--ink-950);
-  --color-content-on-flood:var(--paper-50);
+  --color-content-on-flood:var(--ink-950);
   --color-content-accent:var(--coral-500);
-  --color-border-round:var(--k-14);
-  --color-focus-ring:var(--ink-900);
-  --color-glow:transparent;                          /* no light behind the photo on paper — B has one */
-  --color-border-photo:transparent;
-  --shadow-surface:0 var(--s-1) var(--s-2) var(--k-04), 0 var(--s-8) var(--s-24) var(--k-06);
-  --shadow-photo:0 var(--s-24) var(--s-48) calc(var(--s-24) * -1) var(--k-14);
+  --color-border-round:var(--w-14);
+  --color-focus-ring:var(--paper-50);
+  --color-glow:color-mix(in srgb, var(--coral-500) 18%, transparent);   /* warm light behind the photo */
+  --color-border-photo:var(--w-08);                  /* the photo's dark corners would melt into the page */
+  --shadow-surface:none;                             /* on graphite, height is a lighter surface, not a shadow */
+  --shadow-photo:none;
 }
 
 /* ══ Layer 2 · Semantics shared by both variants: sizes, radii, fonts ══ */
