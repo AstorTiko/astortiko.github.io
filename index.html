@@ -1,0 +1,359 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tigran Astor — дизайнер, делаю продукты с ИИ</title>
+<meta name="description" content="Дизайнер. Делаю свои продукты с ИИ вместо команды. Живу во Вьетнаме. Дневник — в Телеграме.">
+<meta name="theme-color" content="#0D0D0D">
+<meta name="color-scheme" content="dark">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="assets/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://astortiko.github.io/">
+<link rel="canonical" href="https://astortiko.github.io/">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:site_name" content="Tigran Astor">
+<meta property="og:title" content="Tigran Astor — дизайнер, делаю продукты с ИИ">
+<meta property="og:description" content="Дизайнер. Делаю свои продукты с ИИ вместо команды. Живу во Вьетнаме. Дневник — в Телеграме.">
+<meta property="og:image" content="https://astortiko.github.io/assets/og.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Фото Тиграна за рабочим столом, рядом имя Tigran Astor, строка о нём и кнопка «Дневник в Телеграме»">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Tigran Astor — дизайнер, делаю продукты с ИИ">
+<meta name="twitter:description" content="Дизайнер. Делаю свои продукты с ИИ вместо команды. Живу во Вьетнаме. Дневник — в Телеграме.">
+<meta name="twitter:image" content="https://astortiko.github.io/assets/og.png">
+<style>
+/* Fonts are self-hosted (OFL, see assets/fonts/OFL.txt): nothing is requested from
+   Google or a CDN at runtime. Rubik ships as one variable file per script. */
+@font-face{font-family:"Rubik";font-style:normal;font-weight:400 700;font-display:swap;
+  src:url(assets/fonts/rubik-latin.woff2) format("woff2");
+  unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:"Rubik";font-style:normal;font-weight:400 700;font-display:swap;
+  src:url(assets/fonts/rubik-cyrillic.woff2) format("woff2");
+  unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}
+@font-face{font-family:"IBM Plex Mono";font-style:normal;font-weight:500;font-display:swap;
+  src:url(assets/fonts/ibm-plex-mono-500-latin.woff2) format("woff2");
+  unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:"IBM Plex Mono";font-style:normal;font-weight:500;font-display:swap;
+  src:url(assets/fonts/ibm-plex-mono-500-cyrillic.woff2) format("woff2");
+  unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}
+
+/* ══ Layer 1 · Primitives — the portfolio's own values (portfolio/site/css/site.css),
+   mode-invariant. One alpha step is new: w-56 for small text (6.4:1 on ink — the
+   portfolio's w-45 sits at 4.5:1, too close to the limit). ══ */
+:root{
+  --ink-950:#0D0D0D;
+  --paper-50:#F4F3F1;
+  --coral-500:#FF6041;
+  --white:#FFFFFF;
+  --w-08:rgb(255 255 255 / .08);
+  --w-14:rgb(255 255 255 / .14);
+  --w-56:rgb(255 255 255 / .56);
+  --w-72:rgb(255 255 255 / .72);
+
+  /* one size scale for space, radius, controls and icons */
+  --s-1:1px; --s-2:2px; --s-4:4px; --s-8:8px; --s-12:12px; --s-14:14px; --s-16:16px;
+  --s-20:20px; --s-24:24px; --s-28:28px; --s-32:32px; --s-40:40px; --s-48:48px;
+  --s-56:56px; --s-64:64px; --s-80:80px; --s-96:96px; --s-112:112px; --s-384:384px;
+  /* layout measures: the text column, the photo's native 4:5 width (640 × 0.8), the
+     single-column plate */
+  --s-440:440px; --s-512:512px; --s-560:560px;
+  --r-lg:20px; --r-full:999px;
+
+  /* type: size and line-height as pairs on the 4-px grid (rauno.me: line-height is a
+     step in px, not a multiplier) */
+  --f-12:12px; --lh-16:16px;
+  --f-14:14px; --lh-20:20px;
+  --f-16:16px; --lh-24:24px;
+  --f-20:20px; --lh-28:28px;
+  --f-28:28px; --lh-36:36px;
+  --fw-regular:400; --fw-medium:500; --fw-bold:700;
+
+  /* motion — design-token-architecture scale; the curve follows the PROPERTY */
+  --duration-fast:100ms; --duration-base:200ms; --duration-slow:300ms; --duration-slower:500ms;
+  --easing-standard:cubic-bezier(.2,0,0,1);
+  --easing-decelerate:cubic-bezier(0,0,0,1);
+  --easing-opacity:cubic-bezier(.4,0,.2,1);
+}
+
+/* ══ Layer 2 · Semantics — components read only these ══ */
+:root{
+  --color-bg-page:var(--ink-950);
+  --color-bg-hover:color-mix(in srgb, var(--ink-950) 95%, var(--white));   /* opaque: one tone up, never see-through */
+  --color-bg-cta:var(--coral-500);
+  --color-bg-cta-hover:var(--paper-50);
+  --color-content-primary:var(--white);
+  --color-content-secondary:var(--w-72);
+  --color-content-tertiary:var(--w-56);
+  --color-content-accent:var(--coral-500);
+  --color-content-cta:var(--ink-950);
+  --color-border-subtle:var(--w-08);
+  --color-border-default:var(--w-14);
+  --color-focus-ring:var(--paper-50);
+
+  --size-focus-ring:var(--s-2);
+  --space-focus-offset:var(--s-4);
+  --size-cta:var(--s-64);
+  --size-icon:var(--s-24);
+  --size-ruler:var(--s-28);
+  --radius-poster:var(--r-lg);
+  --radius-cta:var(--r-full);
+  --space-gutter:clamp(var(--s-20), 3.6vw, var(--s-64));   /* the portfolio's --gut */
+  --space-columns:clamp(var(--s-48), 7vw, var(--s-112));
+  --size-column:var(--s-560);
+  --size-panel:var(--s-440);
+  --size-poster:clamp(var(--s-384), 40vw, var(--s-512));
+  /* photo scrim: the page colour at three strengths, computed from the token */
+  --color-scrim-strong:var(--color-bg-page);
+  --color-scrim-mid:color-mix(in srgb, var(--color-bg-page) 55%, transparent);
+  --color-scrim-soft:color-mix(in srgb, var(--color-bg-page) 90%, transparent);
+  --color-scrim-half:color-mix(in srgb, var(--color-bg-page) 50%, transparent);
+
+  --font-sans:"Rubik", "Helvetica Neue", Arial, sans-serif;
+  --font-mono:"IBM Plex Mono", "SFMono-Regular", Menlo, monospace;
+
+  --motion-stagger:calc(var(--duration-fast) / 2);
+}
+
+/* ══ Base ══ */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%;background:var(--color-bg-page)}
+body{min-height:100vh;min-height:100svh;background:var(--color-bg-page);color:var(--color-content-primary);
+  font-family:var(--font-sans);font-weight:var(--fw-regular);font-size:var(--f-16);line-height:var(--lh-24);
+  -webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+a{color:inherit;text-decoration:none;-webkit-tap-highlight-color:transparent}
+a:focus{outline:none}
+a:focus-visible{outline:var(--size-focus-ring) solid var(--color-focus-ring);outline-offset:var(--space-focus-offset)}
+img,svg{display:block}
+ul{list-style:none}
+b{font-weight:inherit}
+.ic{flex:none;width:var(--size-icon);height:var(--size-icon);fill:none;stroke:currentColor;
+  stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+
+/* ══ Page · S-07 «вылет за сетку»: on a phone the poster leaves the text column and runs
+   to the screen edges; the name sits on the seam where the photo dissolves into the page ══ */
+.page{--inset:var(--space-gutter)}
+.side{padding:var(--s-24) var(--inset) 0}
+
+/* ══ Poster: photo + name. The photo's own bottom is near-black desk, the scrim takes
+   it the rest of the way to the page colour, so on a phone there is no visible edge ══ */
+.poster{position:relative;isolation:isolate;overflow:hidden;container-type:inline-size;
+  background:var(--color-bg-page)}
+.poster__media{display:block;aspect-ratio:1/1;max-height:60vh;max-height:60svh}
+.poster__media img{width:100%;height:100%;object-fit:cover;object-position:50% 0}
+.poster::after{content:"";position:absolute;inset:0;z-index:0;pointer-events:none;
+  background:linear-gradient(to top, var(--color-scrim-strong) 0%, var(--color-scrim-mid) 24%, transparent 48%)}
+.poster__name{position:absolute;z-index:1;left:var(--inset);right:var(--inset);bottom:0;
+  font-weight:var(--fw-bold);line-height:1.25;letter-spacing:-.03em;word-spacing:.06em;white-space:nowrap;text-wrap:balance;
+  font-size:calc((100vw - 2 * var(--inset)) / 5.96);
+  font-size:calc((100cqi - 2 * var(--inset)) / 5.96)}
+
+/* ══ Bio · S-18 two-tone line: the role in full white, the facts one step down ══ */
+.bio{font-size:var(--f-20);line-height:var(--lh-28);letter-spacing:-.01em;color:var(--color-content-secondary);
+  max-width:34ch;text-wrap:pretty}
+.bio b{color:var(--color-content-primary);font-weight:var(--fw-medium)}
+
+/* ══ Links · S-37 «плита среди прозрачных»: the one action that matters is a solid plate,
+   the rest are transparent ruled rows — emphasis without a badge or a coloured frame ══ */
+.cta{position:relative;isolation:isolate;overflow:hidden;
+  display:flex;align-items:center;justify-content:space-between;gap:var(--s-12);
+  min-height:var(--size-cta);margin-top:var(--s-28);padding:0 var(--s-20) 0 var(--s-24);
+  border-radius:var(--radius-cta);background:var(--color-bg-cta);color:var(--color-content-cta);
+  font-size:var(--f-20);line-height:var(--lh-28);font-weight:var(--fw-medium);letter-spacing:-.01em;
+  transition:transform var(--duration-fast) var(--easing-standard),background-color 0s}
+/* the portfolio's corner fill (portavia): a dot in the lower-left corner floods the pill.
+   Once the flood is complete the pill's own colour follows it (no coral fringe on the
+   anti-aliased ends); on leave the colour returns at once and the dot drains back */
+.cta::before{content:"";position:absolute;z-index:-1;left:var(--s-16);bottom:var(--s-16);
+  width:var(--s-16);height:var(--s-16);border-radius:50%;background:var(--color-bg-cta-hover);
+  transform:scale(0);transition:transform var(--duration-slower) var(--easing-standard)}
+.cta .ic{stroke-width:2;transition:transform var(--duration-slow) var(--easing-standard)}
+.cta:focus-visible::before{transform:scale(64)}
+.cta:focus-visible{background-color:var(--color-bg-cta-hover);
+  transition:transform var(--duration-fast) var(--easing-standard),background-color 0s var(--duration-slower)}
+.cta:active{transform:scale(.98)}
+
+.links{margin-top:var(--s-24)}
+/* the top rule belongs to the first row, so it arrives with it instead of before everything */
+.links > li:first-child .link{border-top:var(--s-1) solid var(--color-border-default)}
+.link{display:grid;grid-template-columns:minmax(0,1fr) var(--size-icon);align-items:center;column-gap:var(--s-16);
+  min-height:var(--s-80);padding-block:var(--s-16);border-bottom:var(--s-1) solid var(--color-border-default);
+  transition:background-color var(--duration-base) var(--easing-opacity)}
+.link__text{display:block;transition:transform var(--duration-slow) var(--easing-standard)}
+.link__title{display:block;font-size:var(--f-20);line-height:var(--lh-28);font-weight:var(--fw-medium);
+  letter-spacing:-.01em;text-wrap:pretty}
+.link__note{font-weight:var(--fw-regular);color:var(--color-content-secondary)}
+.link__meta{display:block;margin-top:var(--s-4);font-family:var(--font-mono);font-weight:var(--fw-medium);
+  font-size:var(--f-14);line-height:var(--lh-20);color:var(--color-content-tertiary)}
+.link .ic{color:var(--color-content-tertiary);
+  transition:color var(--duration-base) var(--easing-opacity),transform var(--duration-slow) var(--easing-standard)}
+.link:active{background-color:var(--color-bg-hover)}
+
+/* ══ Networks · S-01 «ровный ряд» (its one use on the page): five equal cells closing the
+   ruled list. On a phone the cells stand in air (a 62-px «Instagram*» in a 63-px cell would
+   touch a divider); from 600 px one hairline between cells, drawn by the gap, never by the cells ══ */
+.nets__list{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));
+  border-bottom:var(--s-1) solid var(--color-border-default)}
+.net{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:var(--s-8);
+  min-height:var(--s-80);padding:var(--s-12) var(--s-4);
+  color:var(--color-content-secondary);
+  transition:color var(--duration-base) var(--easing-opacity),background-color var(--duration-base) var(--easing-opacity)}
+.net:focus-visible{outline-offset:0 /* ring on the cell edge: drawn inside, it would touch the longest label */}
+.net svg{flex:none;width:var(--size-icon);height:var(--size-icon);fill:currentColor}
+.net__label{font-size:var(--f-12);line-height:var(--lh-16);white-space:nowrap}
+.net:active{background-color:var(--color-bg-hover);color:var(--color-content-primary)}
+
+/* ══ Footer: the portfolio's ruler, the legal note, the year ══ */
+.foot{padding:var(--s-40) 0 var(--s-32);
+  color:var(--color-content-tertiary);font-size:var(--f-12);line-height:var(--lh-16)}
+.ruler{height:var(--size-ruler);color:var(--color-content-tertiary);opacity:.45;
+  background:linear-gradient(currentColor, currentColor) right top / var(--s-1) 100% no-repeat,
+    linear-gradient(90deg, currentColor var(--s-1), transparent var(--s-1)) left top / var(--s-14) 100% round}
+.foot__note{margin-top:var(--s-16);max-width:44ch;line-height:var(--lh-20);text-wrap:pretty}
+.foot__copy{margin-top:var(--s-12);font-family:var(--font-mono);font-weight:var(--fw-medium);
+  letter-spacing:.14em;text-transform:uppercase}
+
+/* ══ Hover lives only where there is a pointer, and always pairs with keyboard focus ══ */
+@media (hover:hover) and (pointer:fine){
+  .cta:hover::before{transform:scale(64)}
+  .cta:hover{background-color:var(--color-bg-cta-hover);
+    transition:transform var(--duration-fast) var(--easing-standard),background-color 0s var(--duration-slower)}
+  .cta:hover .ic,.cta:focus-visible .ic{transform:translate(var(--s-2), calc(var(--s-2) * -1))}
+  .link:hover .link__text{transform:translateX(var(--s-8))}
+  .link:hover .ic{color:var(--color-content-accent);transform:translate(var(--s-2), calc(var(--s-2) * -1))}
+  .net:hover{background-color:var(--color-bg-hover);color:var(--color-content-primary)}
+}
+.link:focus-visible .ic{color:var(--color-content-accent)}
+.net:focus-visible{color:var(--color-content-primary)}
+
+/* ══ Very narrow phones: the five labels no longer fit their cells — icons stay,
+   names stay for screen readers ══ */
+@media (max-width:359px){
+  .net__label{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);clip-path:inset(50%);white-space:nowrap}
+}
+
+/* ══ From 600 px the photo can no longer bleed (its file is 640 px): it becomes a framed
+   plate in a centred column, and the text lines up with the name inside it ══ */
+@media (min-width:600px){
+  .page{--inset:var(--s-32);width:min(100% - 2 * var(--space-gutter), var(--size-column));margin-inline:auto;
+    padding-top:var(--space-gutter)}
+  .poster{border-radius:var(--radius-poster)}
+  .poster::before{content:"";position:absolute;inset:0;z-index:2;border-radius:inherit;pointer-events:none;
+    box-shadow:inset 0 0 0 var(--s-1) var(--color-border-subtle)}
+  .poster__media{max-height:none}
+  .poster::after{background:linear-gradient(to top, var(--color-scrim-soft) 0%, var(--color-scrim-half) 22%, transparent 46%)}
+  .poster__name{bottom:var(--s-16)}
+  .side{padding-top:var(--s-32)}
+  .nets__list{gap:var(--s-1);background:var(--color-border-default)}
+  .net{background:var(--color-bg-page)}
+}
+
+/* ══ Desktop: poster and text side by side, the whole card centred in the window ══ */
+@media (min-width:900px){
+  .page{--inset:var(--s-32);width:auto;max-width:none;display:grid;
+    grid-template-columns:var(--size-poster) minmax(0, var(--size-panel));
+    column-gap:var(--space-columns);justify-content:center;align-items:center;
+    min-height:100vh;min-height:100svh;padding:var(--s-64) var(--space-gutter)}
+  .side{padding:0}
+  .poster__media{aspect-ratio:4/5}
+  .poster__media img{object-position:30% 0}
+  .bio{font-size:var(--f-28);line-height:var(--lh-36)}
+  .foot{padding-bottom:0}
+}
+
+/* ══ One entrance: poster, then the column top to bottom, 50 ms apart.
+   Opacity and movement run on their own curves. Fill is «backwards» on purpose: the start
+   state holds through the delay, and once the entrance ends nothing is held, so the
+   button's own press and hover transforms are never overridden by a finished animation.
+   Nothing moves when motion is reduced ══ */
+@media (prefers-reduced-motion:no-preference){
+  .enter{animation:enter-fade var(--duration-slower) var(--easing-opacity) backwards,
+      enter-rise var(--duration-slower) var(--easing-decelerate) backwards;
+    animation-delay:calc(var(--i, 0) * var(--motion-stagger))}
+  .poster__media img{animation:enter-fade var(--duration-slower) var(--easing-opacity) backwards,
+      enter-settle var(--duration-slower) var(--easing-decelerate) backwards}
+  @keyframes enter-fade{from{opacity:0}}
+  @keyframes enter-rise{from{transform:translateY(var(--s-12))}}
+  @keyframes enter-settle{from{transform:scale(1.03)}}
+}
+</style>
+</head>
+<body ontouchstart="">
+
+<div class="page">
+
+  <header class="poster">
+    <picture class="poster__media">
+      <source type="image/webp" srcset="assets/tiko.webp">
+      <img src="assets/tiko.jpg" width="640" height="640" fetchpriority="high" decoding="async"
+        alt="Тигран за рабочим столом с ноутбуком, на стене за ним неоновая надпись Tigran Astor, в окне ночной город">
+    </picture>
+    <h1 class="poster__name enter" style="--i:1">Tigran Astor</h1>
+  </header>
+
+  <div class="side">
+    <main class="panel">
+      <p class="bio enter" style="--i:2"><b>Дизайнер.</b> Делаю свои продукты с&nbsp;ИИ&nbsp;вместо команды. Живу во&nbsp;Вьетнаме.</p>
+
+      <a class="cta enter" style="--i:3" href="https://t.me/tigran_astor" rel="me">
+        <span>Дневник в&nbsp;Телеграме</span>
+        <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>
+      </a>
+
+      <ul class="links" role="list">
+        <li class="enter" style="--i:4">
+          <a class="link" href="https://t.me/spenfold_bot">
+            <span class="link__text">
+              <span class="link__title">Spenfold<span class="link__note">&nbsp;— семейный бюджет в&nbsp;Телеграме</span></span>
+              <span class="link__meta">@spenfold_bot</span>
+            </span>
+            <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>
+          </a>
+        </li>
+        <li class="enter" style="--i:5">
+          <a class="link" href="https://t.me/tiko_astor" rel="me">
+            <span class="link__text">
+              <span class="link__title">Написать мне</span>
+              <span class="link__meta">@tiko_astor</span>
+            </span>
+            <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>
+          </a>
+        </li>
+      </ul>
+
+      <nav class="nets enter" style="--i:6" aria-label="Соцсети">
+        <ul class="nets__list" role="list">
+          <li><a class="net" href="https://www.threads.com/@tigran.astor" rel="me">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.186 24h-.007c-3.581-.024-6.334-1.205-8.184-3.509C2.35 18.44 1.5 15.586 1.472 12.01v-.017c.03-3.579.879-6.43 2.525-8.482C5.845 1.205 8.6.024 12.18 0h.014c2.746.02 5.043.725 6.826 2.098 1.677 1.29 2.858 3.13 3.509 5.467l-2.04.569c-1.104-3.96-3.898-5.984-8.304-6.015-2.91.022-5.11.936-6.54 2.717C4.307 6.504 3.616 8.914 3.589 12c.027 3.086.718 5.496 2.057 7.164 1.43 1.783 3.631 2.698 6.54 2.717 2.623-.02 4.358-.631 5.8-2.045 1.647-1.613 1.618-3.593 1.09-4.798-.31-.71-.873-1.3-1.634-1.75-.192 1.352-.622 2.446-1.284 3.272-.886 1.102-2.14 1.704-3.73 1.79-1.202.065-2.361-.218-3.259-.801-1.063-.689-1.685-1.74-1.752-2.964-.065-1.19.408-2.285 1.33-3.082.88-.76 2.119-1.207 3.583-1.291a13.853 13.853 0 0 1 3.02.142c-.126-.742-.375-1.332-.75-1.757-.513-.586-1.308-.883-2.359-.89h-.029c-.844 0-1.992.232-2.721 1.32L7.734 7.847c.98-1.454 2.568-2.256 4.478-2.256h.044c3.194.02 5.097 1.975 5.287 5.388.108.046.216.094.321.142 1.49.7 2.58 1.761 3.154 3.07.797 1.82.871 4.79-1.548 7.158-1.85 1.81-4.094 2.628-7.277 2.65Zm1.003-11.69c-.242 0-.487.007-.739.021-1.836.103-2.98.946-2.916 2.143.067 1.256 1.452 1.839 2.784 1.767 1.224-.065 2.818-.543 3.086-3.71a10.5 10.5 0 0 0-2.215-.221z"/></svg>
+            <span class="net__label">Threads</span></a></li>
+          <li><a class="net" href="https://www.instagram.com/tigran.astor/" rel="me" aria-describedby="note-meta">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"/></svg>
+            <span class="net__label">Instagram*</span></a></li>
+          <li><a class="net" href="https://www.youtube.com/@Tikoast" rel="me">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+            <span class="net__label">YouTube</span></a></li>
+          <li><a class="net" href="https://www.tiktok.com/@astor_tik" rel="me">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
+            <span class="net__label">TikTok</span></a></li>
+          <li><a class="net" href="https://x.com/tikoastor" rel="me">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.234 10.162 22.977 0h-2.072l-7.591 8.824L7.251 0H.258l9.168 13.343L.258 24H2.33l8.016-9.318L16.749 24h6.993zm-2.837 3.299-.929-1.329L3.076 1.56h3.182l5.965 8.532.929 1.329 7.754 11.09h-3.182z"/></svg>
+            <span class="net__label">X</span></a></li>
+        </ul>
+      </nav>
+    </main>
+
+    <footer class="foot enter" style="--i:7">
+      <div class="ruler" aria-hidden="true"></div>
+      <p class="foot__note" id="note-meta">*&nbsp;Instagram принадлежит компании Meta, признанной экстремистской и&nbsp;запрещённой в&nbsp;России.</p>
+      <p class="foot__copy">©&nbsp;2026 Tigran Astor</p>
+    </footer>
+  </div>
+
+</div>
+
+</body>
+</html>
