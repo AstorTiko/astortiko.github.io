@@ -1,0 +1,408 @@
+<!doctype html>
+<html lang="ru" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Тигран Астор — продуктовый UX/UI-дизайнер</title>
+<meta name="description" content="Продуктовый UX/UI-дизайнер. Полный цикл разработки с ИИ: от ТЗ и сценариев до работающего продукта.">
+<meta name="robots" content="noindex">
+<link rel="icon" href="img/concept-v8/astor-mark.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geologica:wght@300;400;500&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="css/concept-v9.css?v=19">
+<script>(function(){var d=document.documentElement;d.classList.remove("no-js");d.classList.add("js");var skip=false;try{skip=sessionStorage.getItem("v9-intro")==="1"}catch(e){}if(matchMedia("(prefers-reduced-motion: reduce)").matches||/[?&]nointro/.test(location.search))skip=true;d.classList.add(skip?"intro-done":"intro-on")})();
+</script>
+</head>
+<body>
+
+
+<div class="intro" aria-hidden="true" data-intro>
+  <span class="intro__c intro__c--tl"></span><span class="intro__c intro__c--tr"></span><span class="intro__c intro__c--bl"></span><span class="intro__c intro__c--br"></span>
+  <svg class="intro__mark" viewBox="0 0 614 531" data-intro-mark></svg>
+  <p class="mono intro__label">01&nbsp;— привет</p>
+  <p class="mono intro__count" data-intro-count>000</p>
+</div>
+
+
+<div class="nav-scrim" data-nav-scrim></div>
+<nav class="nav" aria-label="Главное меню" data-nav>
+  <div class="nav__bar">
+    <button class="nav__menu" type="button" aria-expanded="false" aria-controls="nav-panel" data-nav-toggle><span class="burger" aria-hidden="true"></span><span>Меню</span></button>
+    <a class="nav__logo" href="#top" aria-label="Тигран Астор, наверх"><img src="img/concept-v8/astor-mark.svg" alt="" width="26" height="22"><span>ASTOR</span></a>
+    <a class="btn btn--primary btn--nav nav__cta" href="https://t.me/tiko_astor" target="_blank" rel="noopener">Написать</a>
+  </div>
+  
+  <div class="nav__panel" id="nav-panel" inert>
+    <div class="nav__pv" aria-hidden="true" data-nav-pv><div class="nav__pvwin"><img src="img/concept-v9/menu-cases.webp" alt="" width="640" height="400" loading="lazy" decoding="async" data-pv-img="cases"><img src="img/concept-v9/menu-ai.webp" alt="" width="640" height="400" loading="lazy" decoding="async" data-pv-img="ai"><img src="img/concept-v9/menu-play.webp" alt="" width="640" height="400" loading="lazy" decoding="async" data-pv-img="play"><img src="img/concept-v9/menu-about.webp" alt="" width="640" height="400" loading="lazy" decoding="async" data-pv-img="about"><img src="img/concept-v9/menu-contact.webp" alt="" width="640" height="400" loading="lazy" decoding="async" data-pv-img="contact"><p class="nav__pvcap" data-pv-cap></p></div></div>
+    <ul class="nav__links">
+      <li style="--i:0"><a href="#cases" data-pv="cases"><i>01</i><span class="nav__lt">Кейсы</span></a></li>
+      <li style="--i:1"><a href="#ai" data-pv="ai"><i>02</i><span class="nav__lt">ИИ в&nbsp;работе</span></a></li>
+      <li style="--i:2"><a href="#play" data-pv="play"><i>03</i><span class="nav__lt">Что делаю</span></a></li>
+      <li style="--i:3"><a href="#about" data-pv="about"><i>04</i><span class="nav__lt">Обо&nbsp;мне</span></a></li>
+      <li style="--i:4"><a href="#contact" data-pv="contact"><i>05</i><span class="nav__lt">Контакты</span></a></li>
+    </ul>
+    <div class="nav__contacts">
+      <p class="nav__row"><span class="mono">Telegram</span><a class="nav__val" href="https://t.me/tiko_astor" target="_blank" rel="noopener">@tiko_astor</a></p>
+      <p class="nav__row"><span class="mono">Почта</span><a class="nav__val" href="mailto:gotiko.rabota@gmail.com">gotiko.rabota@gmail.com</a></p>
+      <p class="nav__row nav__row--cv"><span class="mono">Резюме</span><a class="btn btn--sm btn--plain btn--cv" href="Tigran-Astor-CV.pdf" target="_blank" rel="noopener" data-arrow="right">Открыть PDF</a></p>
+    </div>
+  </div>
+</nav>
+
+
+<canvas class="storm" aria-hidden="true" data-storm></canvas>
+<div class="stage" aria-hidden="true" data-stage>
+  <canvas class="stage__gl" data-gl></canvas>
+  <img class="stage__svg" src="img/concept-v8/astor-mark.svg" alt="" width="614" height="531" data-stage-svg>
+  <canvas class="stage__lines" data-lines></canvas>
+</div>
+
+<main id="top">
+
+
+<header class="hero" data-hero>
+  <div class="wrap hero__in">
+    <div class="hero__spot" data-spot aria-hidden="true"></div>
+    <div class="hero__text" data-blast>
+      <div class="hero__id">
+        <p class="mono hero__kicker">Тигран Астор</p>
+        <p class="hero__facts">Продуктовый UX/UI-дизайнер<span class="hero__sep" aria-hidden="true"> · </span><span class="nobr">3+&nbsp;года в&nbsp;дизайне</span><br>Мобильные приложения, B2B-системы, сайты</p>
+      </div>
+      <h1 class="hero__h" data-split>Делаю сложные продукты понятными&nbsp;— от&nbsp;сценария до&nbsp;кода</h1>
+      <div class="hero__btns blurin" style="--bd:1300ms">
+        <a class="btn btn--primary btn--sm" href="#work" data-arrow="down">Смотреть кейсы</a>
+        <a class="btn btn--sm" href="#contact">Написать</a>
+      </div>
+      <p class="hero__status blurin" style="--bd:1400ms">Открыт к&nbsp;работе в&nbsp;команде и&nbsp;к&nbsp;заказам любого масштаба.</p>
+    </div>
+    <div class="hero__side" data-blast>
+      <p class="hero__lead blurin" style="--bd:1100ms">Проектирую интерфейсы любой сложности: мобильные приложения, десктопные системы, сайты и&nbsp;<span class="nobr">веб-сервисы</span>. Работаю в&nbsp;Figma или сразу в&nbsp;коде.</p>
+      <p class="mono hero__cred blurin" style="--bd:1200ms"><span>Свои продукты: Spenfold · VelaVoice · Sunwake</span></p>
+    </div>
+  </div>
+</header>
+
+
+<section class="show" id="cases" aria-labelledby="cases-h" data-show>
+  <div class="show__pin">
+    <div class="show__fly" aria-hidden="true" data-fly></div>
+    <div class="show__center">
+      <span class="show__mk"><svg class="show__mark" viewBox="0 0 614 531" aria-hidden="true" data-show-mark></svg><span class="show__ripple" aria-hidden="true" data-show-ripple></span></span>
+      <div class="show__txt">
+        <p class="mono">01&nbsp;— кейсы</p>
+        <h2 class="h2 show__h" id="cases-h" data-blurwords>Мои работы<b class="dot">.</b></h2>
+        <p class="show__note">Merro и&nbsp;Dalvo под&nbsp;NDA: название, цвета и&nbsp;тексты на&nbsp;экранах изменены. Логика интерфейса и&nbsp;мои решения настоящие.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="list" data-list>
+    <canvas class="list__lines" aria-hidden="true" data-list-lines></canvas>
+    <svg class="list__fx" aria-hidden="true" width="0" height="0" focusable="false"><defs data-wave-defs></defs></svg>
+    <div class="wrap list__in">
+
+      <article class="case case--l case--open" id="work">
+        <a class="case__link" data-tlink-host href="case-merro.html">
+          <div class="plate plate--indigo" data-node data-name="Merro"><div class="phones">
+            <span class="iph"><span class="iph__s"><img src="img/concept-v8/merro-v4-wallet.webp" alt="Merro: кошелёк" width="750" height="1624" loading="lazy"></span></span>
+            <span class="iph"><span class="iph__s"><img src="img/concept-v8/merro-v4-chat-gift.webp" alt="Merro: подарок в чате" width="750" height="1624" loading="lazy"></span></span>
+            <span class="iph"><span class="iph__s"><img src="img/concept-v8/merro-v4-bridge.webp" alt="Merro: мост между сетями" width="750" height="1624" loading="lazy"></span></span>
+          </div><span class="mono plate__st">В тестировании</span></div>
+          <div class="case__meta">
+            <h3 class="case__name">Merro<b class="dot">.</b></h3>
+            <p class="case__type">Мессенджер с&nbsp;криптокошельком&nbsp;· iOS и&nbsp;Android&nbsp;· 2025&nbsp;— н.&nbsp;в.&nbsp;· NDA</p>
+            <p class="case__line">Спроектировал кошелёк, обмен, мост между сетями и&nbsp;криптоподарки, заново собрал UI-кит. Бэкенд был написан раньше дизайна, решения подстраивал под&nbsp;его&nbsp;возможности.</p>
+            <span class="tlink case__go">Открыть кейс</span>
+          </div>
+        </a>
+      </article>
+
+      <article class="case case--r case--open">
+        <a class="case__link" data-tlink-host href="case-spenfold.html">
+          <div class="plate plate--indigo" data-node data-name="Spenfold"><div class="phones">
+            <span class="iph iph--sb" style="--sb:linear-gradient(90deg,#241206,#0a0401 45%,#000)"><span class="iph__s"><img src="img/concept-v8/spenfold-m-home.webp" alt="Spenfold: расходы за месяц" width="786" height="1596" loading="lazy"></span></span>
+            <span class="iph iph--sb" style="--sb:linear-gradient(90deg,#241206,#0a0401 45%,#000)"><span class="iph__s"><img src="img/concept-v8/spenfold-m-stats.webp" alt="Spenfold: аналитика по категориям" width="786" height="1596" loading="lazy"></span></span>
+            <span class="iph iph--sb" style="--sb:linear-gradient(90deg,#241206,#0a0401 45%,#000)"><span class="iph__s"><img src="img/concept-v8/spenfold-m-converter.webp" alt="Spenfold: конвертер валют" width="786" height="1596" loading="lazy"></span></span>
+          </div><span class="mono plate__st">Запущен</span></div>
+          <div class="case__meta">
+            <h3 class="case__name">Spenfold<b class="dot">.</b></h3>
+            <p class="case__type">Семейный бюджет в&nbsp;Telegram&nbsp;· бот и&nbsp;мини-приложение&nbsp;· 2026&nbsp;· свой продукт</p>
+            <p class="case__line">Трату отправляешь боту голосом, текстом или фото чека, приложение открывать не&nbsp;нужно. Встроенный конвертер показывает, сколько потрачено в&nbsp;валюте, в&nbsp;которой зарабатываешь.</p>
+            <span class="tlink case__go">Открыть кейс</span>
+          </div>
+        </a>
+      </article>
+
+      <article class="case case--c case--open">
+        <a class="case__link" data-tlink-host href="case-elizaveta.html">
+          <div class="plate" data-node data-name="Елизавета"><div class="desk"><span class="win"><i></i><img src="img/cases/elizaveta-v5/d-hero.webp" alt="Елизавета: первый экран сайта, слайды карточек вокруг заголовка" width="2880" height="1800" loading="lazy"></span></div><span class="mono plate__st">Живой сайт</span></div>
+          <div class="case__meta">
+            <h3 class="case__name">Елизавета<b class="dot">.</b></h3>
+            <p class="case__type">Сайт-портфолио дизайнера карточек&nbsp;· дизайн и&nbsp;код&nbsp;· 2026</p>
+            <p class="case__line">Одностраничный сайт дизайнера карточек для Wildberries и&nbsp;Ozon: работы, шаги заказа, цены и&nbsp;кнопка в&nbsp;Telegram. Дизайн, анимации и&nbsp;вёрстка.</p>
+            <span class="tlink case__go">Открыть кейс</span>
+          </div>
+        </a>
+      </article>
+
+      <article class="case case--l case--open">
+        <a class="case__link" data-tlink-host href="case-olmoz.html">
+          <div class="plate plate--peach" data-node data-name="OLMOZ"><div class="mix">
+            <span class="win mix__desk"><i></i><img src="img/concept-v8/olmoz-desk-home.webp" alt="OLMOZ: главная на десктопе" width="1440" height="900" loading="lazy"></span>
+            <span class="iph iph--sb mix__ph--back" style="--sb:#131319"><span class="iph__s"><img src="img/concept-v8/olmoz-m-catalog.webp" alt="OLMOZ: каталог пополнений" width="786" height="1596" loading="lazy"></span></span>
+            <span class="iph iph--sb mix__ph--front" style="--sb:#151619"><span class="iph__s"><img src="img/concept-v8/olmoz-m-home.webp" alt="OLMOZ: главная с драконом" width="786" height="1596" loading="lazy"></span></span>
+          </div><span class="mono plate__st">Работает</span></div>
+          <div class="case__meta">
+            <h3 class="case__name">OLMOZ<b class="dot">.</b></h3>
+            <p class="case__type">Магазин игровых пополнений и&nbsp;мерча&nbsp;· сайт и&nbsp;админка&nbsp;· 2026</p>
+            <p class="case__line">Из&nbsp;одной страницы оплаты сделал платформу: каталог, корзина, отзывы, админка. Дизайн, дизайн-система и&nbsp;фронтенд мои.</p>
+            <span class="tlink case__go">Открыть кейс</span>
+          </div>
+        </a>
+      </article>
+
+      
+      
+      <div class="more" data-more>
+        <p class="mono more__label">Ещё</p>
+        <ul class="more__list">
+        <li><a class="more__row" href="case-velavoice.html">
+          <span class="more__cov" data-name="VelaVoice"><span class="more__win"><img src="img/concept-v8-case/velavoice/home.webp" alt="VelaVoice: главный экран приложения" width="2240" height="1560" loading="lazy" decoding="async"></span></span>
+          <span class="more__txt"><span class="more__top"><span class="more__name">VelaVoice<b class="dot">.</b></span><span class="mono more__st">Пользуюсь каждый день</span></span><span class="more__pass">Диктовка для&nbsp;macOS&nbsp;· свой продукт</span><span class="more__line">Нажал клавишу и&nbsp;сказал: текст встаёт в&nbsp;окно с&nbsp;пунктуацией и&nbsp;без&nbsp;слов-паразитов. Распознавание настроено под&nbsp;русский язык, словарь пополняется своими словами.</span></span>
+          <span class="more__go" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 14 14"><path d="M2 7h10m0 0L8 3m4 4-4 4" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        </a></li>
+        <li><a class="more__row" href="case-dalvo.html">
+          <span class="more__cov" data-name="Dalvo"><span class="more__win"><img src="img/concept-v8/dalvo-site.webp" alt="Dalvo: первый экран сайта" width="1600" height="1000" loading="lazy" decoding="async"></span></span>
+          <span class="more__txt"><span class="more__top"><span class="more__name">Dalvo<b class="dot">.</b></span><span class="mono more__st">Сдан заказчику</span></span><span class="more__pass">Сайт и&nbsp;схема протокола&nbsp;· 2026&nbsp;· NDA</span><span class="more__line">Карту протокола из&nbsp;29&nbsp;блоков разложил на&nbsp;пошаговые сценарии для&nbsp;человека без&nbsp;технической подготовки.</span></span>
+          <span class="more__go" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 14 14"><path d="M2 7h10m0 0L8 3m4 4-4 4" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        </a></li>
+        <li><a class="more__row" href="case-technodar.html">
+          <span class="more__cov" data-name="Технодар"><span class="more__win"><img src="img/concept-v8/technodar-v2-hourly.webp" alt="Технодар: ввод показаний по часам" width="1600" height="900" loading="lazy" decoding="async"></span></span>
+          <span class="more__txt"><span class="more__top"><span class="more__name">Технодар<b class="dot">.</b></span><span class="mono more__st">В работе</span></span><span class="more__pass">Судовая система мониторинга&nbsp;· десктоп и&nbsp;планшеты, B2B&nbsp;· 2023&nbsp;— н.&nbsp;в.</span><span class="more__line">Веду интерфейсы системы: редизайн экранов, виджеты бортовой панели, экраны ROM. Работаю внутри готовой дизайн-системы заказчика, после другого дизайнера.</span></span>
+          <span class="more__go" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 14 14"><path d="M2 7h10m0 0L8 3m4 4-4 4" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        </a></li>
+        <li><div class="more__row more__row--static">
+          <span class="more__cov" data-name="Sunwake"><span class="more__win"><img src="img/concept-v8/sunwake-02-generate.webp" alt="Sunwake: генерация с ценой до нажатия" width="1600" height="1000" loading="lazy" decoding="async"></span></span>
+          <span class="more__txt"><span class="more__top"><span class="more__name">Sunwake<b class="dot">.</b></span><span class="mono more__st">В разработке</span></span><span class="more__pass">Платформа для&nbsp;ИИ-контента&nbsp;· свой продукт</span><span class="more__line">Контент-завод из&nbsp;узлов генерации: монтаж внутри, автопубликация в&nbsp;соцсети и&nbsp;аналитика по&nbsp;ним.</span></span>
+        </div></li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<section class="mani" id="ai" aria-labelledby="ai-h" data-mani>
+  <div class="mani__pin">
+    <div class="wrap mani__in">
+      <div class="mani__body">
+        <p class="mono mani__label" id="ai-label" data-mani-label>02&nbsp;— ИИ в&nbsp;работе</p>
+        
+        <h2 class="mani__text" id="ai-h" data-mani-text>Своя система ИИ&#8209;агентов на&nbsp;<strong>Claude&nbsp;Code и&nbsp;Codex</strong>. Больше 200 инструкций, и&nbsp;в&nbsp;них мои правила дизайна: от&nbsp;сетки до&nbsp;гайдлайнов Apple и&nbsp;Google. Агенты собирают макеты и&nbsp;код по&nbsp;этим правилам, решения принимаю&nbsp;я<b class="dot">.</b></h2>
+        <div class="aip" data-aip>
+          <ol class="aip__n">
+            <li><i aria-hidden="true"></i><span>ТЗ</span></li>
+            <li><i aria-hidden="true"></i><span>дизайн</span></li>
+            <li><i aria-hidden="true"></i><span>код</span></li>
+            <li><i aria-hidden="true"></i><span>тесты</span></li>
+            <li><i aria-hidden="true"></i><span>ревью</span></li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="sk" id="play" aria-labelledby="sk-h" data-sk data-scene="mark">
+  <div class="sk__track">
+    <div class="sk__pin">
+      <div class="sk__head">
+        <p class="mono sk__label">03</p>
+        <p class="sk__main">Что делаю<b class="dot">.</b></p>
+        <h2 class="sk__h" id="sk-h">Что&nbsp;можно мне поручить<b class="dot">.</b></h2>
+      </div>
+    </div>
+  </div>
+  <ul class="sk__plates" aria-label="Что делаю" data-sk-plates>
+    <li class="sk__plate"><div class="sk__pi"><span class="mono">01 / 06</span><h3>Интерфейсы приложений и&nbsp;веб-сервисов</h3>
+      <svg class="sk__ico" viewBox="0 0 96 96" aria-hidden="true"><rect pathLength="1" x="8" y="14" width="80" height="62" rx="9"/><rect pathLength="1" x="20" y="26" width="56" height="38" rx="5"/><rect pathLength="1" x="32" y="38" width="32" height="14" rx="2.5"/><path pathLength="1" d="M58 56 74 62 67 64.5 64.5 71.5z"/></svg>
+      <p>Разбираю ТЗ, прописываю сценарии, тарифы, лимиты и&nbsp;крайние случаи, рисую все состояния экранов. На&nbsp;выходе макеты для&nbsp;iOS, Android, десктопа и&nbsp;веба, по&nbsp;которым команда собирает продукт.</p></div></li>
+    <li class="sk__plate"><div class="sk__pi"><span class="mono">02 / 06</span><h3>Дизайн-системы и&nbsp;UI-киты</h3>
+      <svg class="sk__ico" viewBox="0 0 96 96" aria-hidden="true"><path pathLength="1" d="M48.0 8.0 L82.6 28.0 L82.6 68.0 L48.0 88.0 L13.4 68.0 L13.4 28.0Z"/><path pathLength="1" d="M48.0 21.0 L71.4 34.5 L71.4 61.5 L48.0 75.0 L24.6 61.5 L24.6 34.5Z"/><path pathLength="1" d="M48.0 34.0 L60.1 41.0 L60.1 55.0 L48.0 62.0 L35.9 55.0 L35.9 41.0Z"/><path pathLength="1" d="M48 8v26M82.6 68 60.1 55M13.4 68l22.5-13"/></svg>
+      <p>Собираю и&nbsp;веду дизайн-системы в&nbsp;Figma: компоненты, токены, светлая и&nbsp;тёмная темы, документация. Или собираю систему сразу в&nbsp;коде: компоненты и&nbsp;токены лежат в&nbsp;вёрстке, и&nbsp;разработчики берут их&nbsp;готовыми.</p></div></li>
+    <li class="sk__plate"><div class="sk__pi"><span class="mono">03 / 06</span><h3>Сайты в&nbsp;Figma или под&nbsp;ключ</h3>
+      <svg class="sk__ico" viewBox="0 0 96 96" aria-hidden="true"><circle pathLength="1" cx="48" cy="48" r="40"/><circle pathLength="1" cx="48" cy="48" r="27"/><circle pathLength="1" cx="48" cy="48" r="14"/><path pathLength="1" d="M48 8 75 48 38.1 57.9"/><circle pathLength="1" cx="48" cy="8" r="3"/><circle pathLength="1" cx="75" cy="48" r="3"/><circle pathLength="1" cx="38.1" cy="57.9" r="3"/></svg>
+      <p>Рисую дизайн сайта в&nbsp;Figma, если у&nbsp;команды есть свои разработчики. Или собираю сайт целиком сам: дизайн, вёрстка и&nbsp;анимации, без&nbsp;конструкторов.</p></div></li>
+    <li class="sk__plate"><div class="sk__pi"><span class="mono">04 / 06</span><h3>Продукт от&nbsp;идеи до&nbsp;кода</h3>
+      <svg class="sk__ico" viewBox="0 0 96 96" aria-hidden="true"><circle pathLength="1" cx="48" cy="48" r="40"/><circle pathLength="1" cx="48" cy="48" r="29"/><path pathLength="1" d="M48 30c1.6 12.4 5.6 16.4 18 18-12.4 1.6-16.4 5.6-18 18-1.6-12.4-5.6-16.4-18-18 12.4-1.6 16.4-5.6 18-18z"/></svg>
+      <p>Идея, сценарии, интерфейс и&nbsp;код с&nbsp;ИИ-агентами. Так собраны три моих&nbsp;продукта:</p>
+      <div class="sk__tiles">
+        <a class="sk__tile" href="case-spenfold.html"><img src="img/concept-v8/spenfold-app-home.webp" alt="" loading="lazy" decoding="async"><span>Spenfold</span></a>
+        <a class="sk__tile" href="case-velavoice.html"><img src="img/concept-v8/full-velavoice.webp" alt="" loading="lazy" decoding="async"><span>VelaVoice</span></a>
+        <div class="sk__tile sk__tile--static"><img src="img/concept-v8/sunwake-02-generate.webp" alt="" loading="lazy" decoding="async"><span>Sunwake</span></div>
+      </div></div></li>
+    <li class="sk__plate"><div class="sk__pi"><span class="mono">05 / 06</span><h3>ИИ-визуал</h3>
+      <svg class="sk__ico" viewBox="0 0 96 96" aria-hidden="true"><path pathLength="1" d="M10 66a20 20 0 0 1 20 20M10 50a36 36 0 0 1 36 36M10 34a52 52 0 0 1 52 52M10 18a68 68 0 0 1 68 68"/><path pathLength="1" d="M74 10c.9 7.1 3.2 9.4 10.3 10.3-7.1.9-9.4 3.2-10.3 10.3-.9-7.1-3.2-9.4-10.3-10.3 7.1-.9 9.4-3.2 10.3-10.3z"/></svg>
+      <p>Собираю ролики и&nbsp;мультики в&nbsp;нейросетях: сценарий, картинка, видео, голос и&nbsp;монтаж.</p></div></li>
+    <li class="sk__plate"><div class="sk__pi"><span class="mono">06 / 06</span><h3>Моушн и&nbsp;монтаж</h3>
+      <svg class="sk__ico" viewBox="0 0 96 96" aria-hidden="true"><circle pathLength="1" cx="48" cy="48" r="40"/><circle pathLength="1" cx="48" cy="48" r="27"/><path pathLength="1" d="M42 37 61 48 42 59z"/><path pathLength="1" d="M8 48h7M81 48h7"/></svg>
+      <p>Делаю моушн-ролики и&nbsp;монтирую короткие видео и&nbsp;Reels: интерфейс в&nbsp;движении, титры, ритм под&nbsp;музыку. Пример в&nbsp;шоуриле&nbsp;ниже.</p></div></li>
+  </ul>
+</section>
+
+
+
+<div class="wipe" aria-hidden="true" data-wipe="in"><div class="wipe__pin"><i></i><i></i><i></i><i></i><i></i></div></div>
+<div class="light" data-light>
+
+
+<section class="section ab" id="about" aria-labelledby="about-h">
+  <div class="wrap">
+    <div class="exp">
+      <div>
+        <p class="mono rv">04&nbsp;— обо&nbsp;мне</p>
+        <h2 class="h2" id="about-h" data-blurwords>Почти везде я&nbsp;единственный дизайнер в&nbsp;команде&nbsp;продукта<b class="dot">.</b></h2>
+        <p class="exp__intro rv" style="--d:120ms">Отвечаю за&nbsp;весь дизайн продукта: интерфейсы, дизайн-систему и&nbsp;проверку готовых экранов. Сам верстаю, поэтому знаю ограничения разработки и&nbsp;предлагаю решения, которые команда может собрать.</p>
+      </div>
+      <ul class="rows">
+      <li class="row"><span class="row__when">2025&nbsp;— н.&nbsp;в.</span><span class="row__name">Merro</span><span class="row__what"><span class="row__role">Дизайн продукта и&nbsp;UI-кит</span></span></li>
+      <li class="row"><span class="row__when">2023&nbsp;— н.&nbsp;в.</span><span class="row__name">Технодар</span><span class="row__what"><span class="row__role">UX/UI системы</span></span></li>
+      <li class="row"><span class="row__when">2026</span><span class="row__name">OLMOZ</span><span class="row__what"><span class="row__role">Дизайн и&nbsp;фронтенд</span></span></li>
+      <li class="row"><span class="row__when">2026</span><span class="row__name">Dalvo</span><span class="row__what"><span class="row__role">Дизайн и&nbsp;вёрстка</span>Заказчик тот же, что&nbsp;у&nbsp;Merro.</span></li>
+      <li class="row"><span class="row__when">2026</span><span class="row__name">Spenfold</span><span class="row__what"><span class="row__role">Свой продукт</span></span></li>
+      <li class="row"><span class="row__when">2026</span><span class="row__name">VelaVoice</span><span class="row__what"><span class="row__role">Свой продукт</span></span></li>
+      <li class="row"><span class="row__when">2026</span><span class="row__name">Sunwake</span><span class="row__what"><span class="row__role">Свой продукт</span></span></li>
+      <li class="row"><span class="row__when">2023</span><span class="row__name">Менторство</span><span class="row__what"><span class="row__role">Практика</span>Практика у&nbsp;UX/UI-дизайнера с&nbsp;десятилетним опытом, сразу на&nbsp;боевых проектах.</span></li>
+    </ul>
+    </div>
+    <div class="about ab__me">
+      <div class="about__text">
+        <h3 class="ab__name rv">Тигран Астор<b class="dot">.</b></h3>
+        <p class="rv" style="--d:60ms">Сильнее всего в&nbsp;экранах с&nbsp;плотными данными: дашборды, таблицы, графики в&nbsp;реальном времени, формы ввода. Сложное раскладываю в&nbsp;пошаговые схемы и&nbsp;презентации для&nbsp;партнёров, на&nbsp;русском и&nbsp;английском.</p>
+      </div>
+      <div class="flip rv" style="--d:120ms" data-flip role="button" tabindex="0" aria-pressed="false" aria-label="Карточка обо мне: фото и факты, нажмите, чтобы открыть факты">
+        <div class="flip__in">
+          <div class="flip__face flip__face--front"><img src="img/concept-v8/me-prism.webp" alt="Тигран Астор" width="1024" height="1536" loading="lazy"><span class="flip__hint" aria-hidden="true"><svg class="flip__ico" viewBox="0 0 20 20" aria-hidden="true"><path d="M4 3.5h7.5L16.5 8.5V16a.5.5 0 0 1-.5.5H4a.5.5 0 0 1-.5-.5V4a.5.5 0 0 1 .5-.5Z"/><path d="M11.5 3.5v4.5a.5.5 0 0 0 .5.5h4.5"/></svg><span class="mono flip__lbl flip__lbl--hov">Наведите, чтобы открыть</span><span class="mono flip__lbl flip__lbl--tap">Нажмите, чтобы открыть</span></span></div>
+          <div class="flip__face flip__face--back" aria-hidden="true">
+            <dl>
+              
+              <div class="flip__g"><dt class="mono">Путь</dt><dd><ol class="flip__path">
+                <li><b>2023</b><span>Практика у&nbsp;UX/UI-дизайнера с&nbsp;десятилетним опытом, сразу на&nbsp;живых проектах: Telegram-игра, потом Технодар. Его веду до&nbsp;сих пор.</span></li>
+                <li><b>2025</b><span>Merro: спроектировал кошелёк, обмен и&nbsp;криптоподарки, заново собрал <span class="nobr">UI-кит</span>.</span></li>
+                <li><b>2026</b><span>Свои продукты Spenfold, VelaVoice и&nbsp;Sunwake: от&nbsp;идеи до&nbsp;кода с&nbsp;ИИ-агентами.</span></li>
+              </ol></dd></div>
+              <div class="flip__g"><dt class="mono">Инструменты</dt><dd>Figma · HTML / CSS · React</dd></div>
+              <div class="flip__g"><dt class="mono">Вне работы</dt><dd>Хожу в&nbsp;зал, путешествую и&nbsp;учу английский.</dd></div>
+            </dl>
+            <span class="flip__hint flip__hint--back" aria-hidden="true"><svg class="flip__ico" viewBox="0 0 20 20" aria-hidden="true"><path d="M4 3.5h7.5L16.5 8.5V16a.5.5 0 0 1-.5.5H4a.5.5 0 0 1-.5-.5V4a.5.5 0 0 1 .5-.5Z"/><path d="M11.5 3.5v4.5a.5.5 0 0 0 .5.5h4.5"/></svg><span class="mono flip__lbl flip__lbl--tap">Нажмите, чтобы вернуть фото</span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <figure class="sreel" id="motion" aria-labelledby="mo-h">
+      
+      <div class="sgrow" data-grow><div class="sgrow__pin">
+      <div class="sreel__frame" data-grow-win>
+        <img class="sreel__bg" src="img/concept-v8/reel-poster.webp" alt="" width="720" height="1280" loading="lazy" decoding="async">
+        <span class="sreel__fg"><video muted playsinline loop preload="none" poster="img/concept-v8/reel-poster.webp" data-auto aria-hidden="true"><source src="img/concept-v8/reel-loop.mp4" type="video/mp4"></video></span>
+        <button class="sreel__hit" type="button" data-play="img/concept-v8/reel-full.mp4" data-poster="img/concept-v8/reel-poster.webp" data-title="Шоурил" aria-label="Открыть шоурил целиком со звуком"></button>
+        <span class="mono sreel__dur">Шоурил · 0:48</span>
+        <button class="btn btn--primary btn--lg sreel__play" type="button" data-play="img/concept-v8/reel-full.mp4" data-poster="img/concept-v8/reel-poster.webp" data-title="Шоурил" data-arrow="play">Шоурил со&nbsp;звуком</button>
+      </div>
+      </div></div>
+      <figcaption class="sreel__cap rv">
+        <h3 class="sreel__h" id="mo-h">Интерфейсы моих продуктов в&nbsp;движении<b class="dot">.</b></h3>
+        <p>Сценарий, моушн и&nbsp;монтаж мои.</p>
+      </figcaption>
+    </figure>
+  </div>
+</section>
+
+
+</div>
+
+
+
+<div class="wipe wipe--dark" aria-hidden="true" data-wipe="out"><div class="wipe__pin"><i></i><i></i><i></i><i></i><i></i></div></div>
+
+<section class="contact" id="contact" aria-labelledby="contact-h" data-contact>
+  <canvas class="contact__fx" aria-hidden="true" data-contact-fx></canvas>
+  <div class="wrap contact__in">
+    <p class="mono rv">05&nbsp;— контакты</p>
+    <h2 class="h2 h2--xxl" id="contact-h" data-blurwords>Обсудим задачу в&nbsp;Telegram<b class="dot">.</b></h2>
+    <p class="contact__hint rv" style="--d:60ms">Напишите, что за&nbsp;продукт, какая задача и&nbsp;к&nbsp;какому сроку. Отвечаю в&nbsp;течение суток.</p>
+    <div class="contact__btns rv" style="--d:120ms">
+      <a class="btn btn--primary btn--lg btn--plain contact__tg" href="https://t.me/tiko_astor" target="_blank" rel="noopener" data-contact-target data-arrow="right">Telegram @tiko_astor</a>
+      <button class="btn btn--lg btn--plain" type="button" data-copy="gotiko.rabota@gmail.com"><span data-copy-label>gotiko.rabota@gmail.com</span></button>
+      <a class="btn btn--lg btn--plain btn--cv" href="Tigran-Astor-CV.pdf" target="_blank" rel="noopener" data-arrow="right">Резюме, PDF</a>
+    </div>
+    <p class="contact__fmt rv" style="--d:180ms">Удалённо: full-time или part-time в&nbsp;команде или отдельный проект.</p>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot" aria-labelledby="foot-h">
+  
+  <div class="wrap foot__in">
+    <div class="foot__id">
+      <a class="foot__logo" href="#top" aria-label="Тигран Астор, наверх"><img src="img/concept-v8/astor-mark.svg" alt="" width="26" height="22"><span>ASTOR</span></a>
+      <h2 class="foot__name" id="foot-h">Тигран Астор<b class="dot">.</b></h2>
+      <p class="foot__role">Продуктовый UX/UI-дизайнер</p>
+    </div>
+    <nav class="foot__col" aria-label="Разделы">
+      <p class="mono">Разделы</p>
+      <ul>
+        <li><a class="foot__a" href="#cases">Кейсы</a></li>
+        <li><a class="foot__a" href="#ai">ИИ в&nbsp;работе</a></li>
+        <li><a class="foot__a" href="#play">Что делаю</a></li>
+        <li><a class="foot__a" href="#about">Обо&nbsp;мне</a></li>
+        <li><a class="foot__a" href="#contact">Контакты</a></li>
+      </ul>
+    </nav>
+    <nav class="foot__col" aria-label="Кейсы">
+      <p class="mono">Кейсы</p>
+      <ul class="foot__cases">
+        <li><a class="foot__a" href="case-merro.html">Merro</a></li>
+        <li><a class="foot__a" href="case-spenfold.html">Spenfold</a></li>
+        <li><a class="foot__a" href="case-elizaveta.html">Елизавета</a></li>
+        <li><a class="foot__a" href="case-olmoz.html">OLMOZ</a></li>
+        <li><a class="foot__a" href="case-velavoice.html">VelaVoice</a></li>
+        <li><a class="foot__a" href="case-dalvo.html">Dalvo</a></li>
+        <li><a class="foot__a" href="case-technodar.html">Технодар</a></li>
+      </ul>
+    </nav>
+    <div class="foot__col">
+      <p class="mono">Связаться</p>
+      <ul>
+        <li><a class="chiplink foot__mail" href="https://t.me/tiko_astor" target="_blank" rel="noopener">Telegram @tiko_astor</a></li>
+        <li><a class="chiplink foot__mail" href="mailto:gotiko.rabota@gmail.com">gotiko.rabota@gmail.com</a></li>
+        <li><a class="chiplink foot__mail" href="Tigran-Astor-CV.pdf" target="_blank" rel="noopener">Резюме, PDF</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="foot__word" aria-hidden="true"><span class="foot__wmark"></span><span class="foot__wtext">ASTOR</span></div>
+  <div class="wrap foot__bar">
+    <span class="mono">© 2026 Тигран Астор</span>
+  </div>
+</footer>
+
+
+<dialog class="lightbox" aria-label="Видео" data-lightbox>
+  <button class="lightbox__close" type="button" aria-label="Закрыть" data-lightbox-close><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="m3.5 3.5 9 9m0-9-9 9" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></button>
+  <video controls playsinline preload="none" data-full></video>
+</dialog>
+
+
+<script>(function(){var w=console.warn;console.warn=function(m){if(typeof m==="string"&&m.indexOf("build/three")>-1)return;return w.apply(console,arguments)};window.__restoreWarn=function(){console.warn=w}})();
+</script>
+<script src="vendor/three.min.js"></script>
+<script>window.__restoreWarn&&window.__restoreWarn();
+</script>
+<script src="js/concept-v9.js?v=13"></script>
+</body>
+</html>
